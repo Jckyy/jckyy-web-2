@@ -1,5 +1,12 @@
 module.exports = {
-  extends: ['mantine', 'plugin:@next/next/recommended', 'plugin:jest/recommended'],
+  extends: [
+    'mantine',
+    'plugin:@next/next/recommended',
+    'plugin:jest/recommended',
+    'next',
+    'next/core-web-vitals',
+    'prettier',
+  ],
   plugins: ['testing-library', 'jest'],
   overrides: [
     {

@@ -6,7 +6,7 @@ import { theme } from '../theme';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <MantineProvider theme={theme}>
+    <MantineProvider theme={{ ...theme, primaryColor: 'myPrimary' }}>
       <Head>
         <title>Mantine Template</title>
         <meta
