@@ -5,7 +5,7 @@ import { Poppins } from 'next/font/google';
 const poppinsFont = Poppins({
     weight: ['400', '700'],
     subsets: ['latin'],
-  });
+});
 
 // Green for Primary Color. Use index 4 for primary
 const myPrimary: MantineColorsTuple = [
@@ -78,16 +78,16 @@ const myWhite: MantineColorsTuple = [
 ];
 
 export const theme = createTheme({
-  colors: {
+    colors: {
     myPrimary,
     mySecondary,
     myAccent,
     myBlack,
     myWhite,
-  },
-  primaryShade: 4,
-  fontFamily: poppinsFont.style.fontFamily,
-  fontSizes: {
+    },
+    primaryShade: 4,
+    fontFamily: poppinsFont.style.fontFamily,
+    fontSizes: {
         sm: '0.750rem',
         md: '1rem',
         xl: '1.333rem',
@@ -95,9 +95,9 @@ export const theme = createTheme({
         '3xl': '2.369rem',
         '4xl': '3.158rem',
         '5xl': '4.210rem',
-  },
-  headings: {
+    },
+    headings: {
     fontFamily: poppinsFont.style.fontFamily,
-    // fontWeight: '700',
-  },
+    fontWeight: '700',
+    },
 });
