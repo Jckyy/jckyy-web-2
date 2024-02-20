@@ -2,21 +2,13 @@ import { Container, Group, Anchor } from '@mantine/core';
 import classes from './FooterSimple.module.css';
 
 const links = [
-    { link: '#', label: 'Contact' },
-    { link: '#', label: 'Privacy' },
-    { link: '#', label: 'Blog' },
-    { link: '#', label: 'Careers' },
+    { link: 'https://www.linkedin.com/in/jckyy/', label: 'LinkedIn' },
+    { link: 'https://github.com/Jckyy', label: 'GitHub' },
 ];
 
 export function FooterSimple() {
     const items = links.map((link) => (
-        <Anchor<'a'>
-            c="dimmed"
-            key={link.label}
-            href={link.link}
-            onClick={(event) => event.preventDefault()}
-            size="sm"
-        >
+        <Anchor<'a'> c="black" key={link.label} href={link.link} size="sm">
             {link.label}
         </Anchor>
     ));

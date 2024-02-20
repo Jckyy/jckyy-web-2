@@ -35,19 +35,19 @@ const mySecondary: MantineColorsTuple = [
     '#5f5457',
   ];
 
-// Purple for Accent Color. Use index 8 for accent
+// Purple for my accent, I want index 3
 const myAccent: MantineColorsTuple = [
-    '#f3ecff',
-    '#e0d4fa',
-    '#bea5f3',
-    '#9b74ed',
-    '#7c4be8',
-    '#6a30e5',
-    '#6023e4',
-    '#5118cb',
-    '#4713b6',
-    '#3c0ea1',
-];
+    "#f3ecff",
+    "#e0d4fd",
+    "#bea7f5",
+    "#9b76ee",
+    "#7c4ce8",
+    "#6932e4",
+    "#5f24e4",
+    "#5018cb",
+    "#4614b6",
+    "#3b0ea0"
+  ];
 
 // Black for Black Color in text. Use any index
 const myBlack: MantineColorsTuple = [
@@ -86,6 +86,8 @@ export const theme = createTheme({
     myWhite,
     },
     primaryShade: 4,
+    luminanceThreshold: 0.1,
+    autoContrast: true,
     fontFamily: poppinsFont.style.fontFamily,
     fontSizes: {
         sm: '0.750rem',
@@ -99,5 +101,10 @@ export const theme = createTheme({
     headings: {
     fontFamily: poppinsFont.style.fontFamily,
     fontWeight: '700',
+    },
+    defaultGradient: {
+        from: myPrimary[4],
+        to: myAccent[3],
+        deg: 45,
     },
 });
