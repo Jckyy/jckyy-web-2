@@ -1,5 +1,6 @@
 import { Container, Group, Anchor } from '@mantine/core';
 import classes from './FooterSimple.module.css';
+import myClasses from '../Styles/styles.module.css';
 
 const links = [
     { link: 'https://www.linkedin.com/in/jckyy/', label: 'LinkedIn' },
@@ -8,7 +9,7 @@ const links = [
 
 export function FooterSimple() {
     const items = links.map((link) => (
-        <Anchor<'a'> c="black" key={link.label} href={link.link} size="sm">
+        <Anchor<'a'> key={link.label} href={link.link} size="sm" className={myClasses.anchor}>
             {link.label}
         </Anchor>
     ));
