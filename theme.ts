@@ -104,7 +104,7 @@ export const theme = createTheme({
     },
     defaultGradient: {
         from: myPrimary[4],
-        to: myAccent[3],
+        to: myPrimary[6],
         deg: 45,
     },
 });

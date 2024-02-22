@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Container, Group, Burger, Image } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import classes from './HeaderSimple.module.css';
+import { ColorSchemeToggle } from '../ColorSchemeToggle/ColorSchemeToggle';
 
 // Add more links here when I have enough content for them
 const links = [{ link: '/Jacky', label: 'Jacky Yao' }];
@@ -29,6 +30,7 @@ export function HeaderSimple() {
         <header className={classes.header}>
             <Container size="md" className={classes.inner}>
                 {/* TODO */}
+                <ColorSchemeToggle />
                 <Image
                     radius="md"
                     h={1}

@@ -16,13 +16,10 @@
 }
 
 .title {
-    color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
-    font-family:
-        Greycliff CF,
-        var(--mantine-font-family);
-    font-size: rem(44px);
+    color: light-dark(var(--mantine-color-myBlack-1), var(--mantine-color-white));
+    font-family: var(--mantine-font-family);
+    font-size: var(--mantine-font-size-4xl);
     line-height: 1.2;
-    font-weight: 700;
 
     @media (max-width: $mantine-breakpoint-xs) {
         font-size: rem(28px);
@@ -46,7 +43,7 @@
 
 .highlight {
     position: relative;
-    background-color: var(--mantine-color-blue-light);
+    background-color: light-dark(var(--mantine-color-myPrimary-4), var(--mantine-color-myAccent-3));
     border-radius: var(--mantine-radius-sm);
     padding: rem(4px) rem(12px);
 }

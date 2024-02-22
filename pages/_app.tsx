@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
     return (
         <MantineProvider theme={{ ...theme, primaryColor: 'myPrimary' }}>
             <Head>
-                <title>Mantine Template</title>
+                <title>Jacky Yao</title>
                 <meta
                     name="viewport"
                     content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"

@@ -1,7 +1,6 @@
 import { Image, Container, Title, Button, Group, Text, List, ThemeIcon, rem } from '@mantine/core';
-import { IconCheck } from '@tabler/icons-react';
+import { IconHeart } from '@tabler/icons-react';
 import NextImage from 'next/image';
-import image from './image.svg';
 import lempika from './lempika.png';
 import classes from './HeroBullets.module.css';
 
@@ -11,12 +10,12 @@ export function HeroBullets() {
             <div className={classes.inner}>
                 <div className={classes.content}>
                     <Title className={classes.title}>
-                        Welcome to Jacky's <span className={classes.highlight}>modern</span> bumhole{' '}
+                        Welcome to Jacky&apos;s <span className={classes.highlight}>modern</span>{' '}
+                        bumhole{' '}
                     </Title>
                     <Text mt="md">
-                        Build fully functional accessible web applications faster than ever –
-                        Mantine includes more than 120 customizable components and hooks to cover
-                        you in any situation
+                        Just some random asian dude with a nice butthole. I like to code and play
+                        with...
                     </Text>
 
                     <List
@@ -25,7 +24,7 @@ export function HeroBullets() {
                         size="sm"
                         icon={
                             <ThemeIcon size={20} radius="xl">
-                                <IconCheck
+                                <IconHeart
                                     style={{ width: rem(12), height: rem(12) }}
                                     stroke={1.5}
                                 />
@@ -56,7 +55,6 @@ export function HeroBullets() {
                     </Group>
                 </div>
                 <Image component={NextImage} src={lempika} className={classes.image} />
-                {/* <Image src={image.src} className={classes.image} /> */}
             </div>
         </Container>
     );

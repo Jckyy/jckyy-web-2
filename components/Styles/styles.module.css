@@ -1,6 +1,6 @@
 .anchor {
     position: relative;
-    color: var(--mantine-color-myBlack-0);
+    color: light-dark(var(--mantine-color-myBlack-0), var(--mantine-color-myWhite-0));
     background-color: var(--your-background-color, transparent);
 }
 
