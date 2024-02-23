@@ -63,7 +63,7 @@ const myBlack: MantineColorsTuple = [
     '#222222',
 ];
 
-// Black for Black Color in text. Use any index
+// White for Black Color in text. Use any index
 const myWhite: MantineColorsTuple = [
     '#ffffff',
     '#ffffff',

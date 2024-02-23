@@ -10,19 +10,19 @@
 } */
 
 .title {
-  color: light-dark(var(--mantine-color-myBlack-1), var(--mantine-color-white));
-  font-family: var(--mantine-font-family);
-  font-size: var(--mantine-font-size-6xl);
-  line-height: 1.6;
-  padding-top: calc(var(--mantine-spacing-xl) * 3);
+    color: light-dark(var(--mantine-color-myBlack-1), var(--mantine-color-white));
+    font-family: var(--mantine-font-family);
+    font-size: var(--mantine-font-size-6xl);
+    line-height: 1.6;
+    padding-top: calc(var(--mantine-spacing-xl) * 3);
 
-  @media (max-width: $mantine-breakpoint-xs) {
-    font-size: rem(28px);
-  }
+    @media (max-width: $mantine-breakpoint-xs) {
+        font-size: rem(28px);
+    }
 }
 
 /* Used to adjust the width and center the carousel */
-.container {
+/* .container {
   width: 100%;
   margin: auto;
-}
+} */
