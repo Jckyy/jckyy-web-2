@@ -1,16 +1,28 @@
-.title {
-    color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
-    font-size: rem(100px);
-    font-weight: 900;
-    letter-spacing: rem(-2px);
+/* .title {
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  font-size: rem(100px);
+  font-weight: 900;
+  letter-spacing: rem(-2px);
 
-    @media (max-width: $mantine-breakpoint-md) {
-        font-size: rem(50px);
-    }
+  @media (max-width: $mantine-breakpoint-md) {
+    font-size: rem(50px);
+  }
+} */
+
+.title {
+  color: light-dark(var(--mantine-color-myBlack-1), var(--mantine-color-white));
+  font-family: var(--mantine-font-family);
+  font-size: var(--mantine-font-size-6xl);
+  line-height: 1.6;
+  padding-top: calc(var(--mantine-spacing-xl) * 3);
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    font-size: rem(28px);
+  }
 }
 
 /* Used to adjust the width and center the carousel */
 .container {
-    width: 56%;
-    margin: auto;
+  width: 100%;
+  margin: auto;
 }

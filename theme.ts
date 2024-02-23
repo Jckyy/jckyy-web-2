@@ -51,16 +51,16 @@ const myAccent: MantineColorsTuple = [
 
 // Black for Black Color in text. Use any index
 const myBlack: MantineColorsTuple = [
-    '#000000',
-    '#000000',
-    '#000000',
-    '#000000',
-    '#000000',
-    '#000000',
-    '#000000',
-    '#000000',
-    '#000000',
-    '#000000',
+    '#222222',
+    '#222222',
+    '#222222',
+    '#222222',
+    '#222222',
+    '#222222',
+    '#222222',
+    '#222222',
+    '#222222',
+    '#222222',
 ];
 
 // Black for Black Color in text. Use any index
@@ -90,17 +90,39 @@ export const theme = createTheme({
     autoContrast: true,
     fontFamily: poppinsFont.style.fontFamily,
     fontSizes: {
+        xs: '0.563rem',
         sm: '0.750rem',
         md: '1rem',
         xl: '1.333rem',
         '2xl': '1.777rem',
         '3xl': '2.369rem',
-        '4xl': '3.158rem',
-        '5xl': '4.210rem',
+        '4xl': '3.157rem',
+        '5xl': '4.209rem',
+        '6xl': '5.610rem',
     },
     headings: {
-    fontFamily: poppinsFont.style.fontFamily,
-    fontWeight: '700',
+        fontFamily: poppinsFont.style.fontFamily,
+        fontWeight: '700',
+        sizes: {
+            h1: {
+                fontSize: '5.610rem',
+            },
+            h2: {
+                fontSize: '4.209rem',
+            },
+            h3: {
+                fontSize: '3.157rem',
+            },
+            h4: {
+                fontSize: '2.369rem',
+            },
+            h5: {
+                fontSize: '1.777rem',
+            },
+            h6: {
+                fontSize: '1.333rem',
+            },
+        },
     },
     defaultGradient: {
         from: myPrimary[4],
