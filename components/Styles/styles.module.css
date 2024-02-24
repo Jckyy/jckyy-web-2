@@ -1,37 +1,30 @@
 .anchor {
-    position: relative;
-    color: light-dark(var(--mantine-color-myBlack-0), var(--mantine-color-myWhite-0));
-    background-color: var(--your-background-color, transparent);
+  position: relative;
+  color: light-dark(var(--mantine-color-myBlack-0), var(--mantine-color-myWhite-0));
 }
 
-/* .anchor a:hover {
-    text-decoration-thickness: rem(3px);
-    text-decoration-color: color-mix(in srgb, var(--mantine-color-myPrimary-6), transparent 40%);
-} */
-
 .anchor:hover {
-    color: inherit;
-    text-decoration-line: line-through;
-    text-decoration-color: color-mix(in srgb, var(--mantine-color-myPrimary-6), transparent 100%);
+  text-decoration-color: color-mix(in srgb, var(--mantine-color-myPrimary-6), transparent 100%);
 
-    &::after {
-        content: '';
-        position: absolute;
-        left: 0%; /* Start from left edge */
-        top: 50%;
-        width: 0; /* Start with no width */
-        height: rem(4px); /* Set desired line height */
-        background-color: var(--mantine-color-myPrimary-4); /* Your desired color */
-        transform: translateY(-50%); /* Center vertically */
-        animation: drawLine 0.2s ease-in-out forwards; /* Animation properties */
-    }
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -1; /* Place it behind the text */
+    left: 0%; /* Start from left edge */
+    top: 50%;
+
+    height: rem(4px); /* Set desired line height */
+    background-color: var(--mantine-color-myPrimary-4); /* Your desired color */
+    transform: translateY(-50%); /* Center vertically */
+    animation: drawLine 0.2s ease-in-out forwards; /* Animation properties */
+  }
 }
 
 @keyframes drawLine {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
+  from {
+    width: 0; /* Start with no width */
+  }
+  to {
+    width: 100%;
+  }
 }
