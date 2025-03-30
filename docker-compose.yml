@@ -6,7 +6,7 @@ services:
     environment:
       NODE_ENV: production
     networks:
-      - caddy
+      - caddy_net
 networks:
   caddy:
-    driver: bridge
+    external: true
