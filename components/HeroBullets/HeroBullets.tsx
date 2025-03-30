@@ -16,7 +16,7 @@ export function HeroBullets() {
             development.
           </Text>
 
-          <Text>
+          <Text c="dimmed" mt="md">
             This is my awfully outdated website locally hosted on a home Ubuntu server using Docker containers and Caddy as the reverse-proxy.
           </Text>
 
