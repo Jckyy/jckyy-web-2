@@ -16,6 +16,10 @@ export function HeroBullets() {
             development.
           </Text>
 
+          <Text>
+            This is my awfully outdated website locally hosted on a home Ubuntu server using Docker containers and Caddy as the reverse-proxy.
+          </Text>
+
           <Group mt={30}>
             <Button variant="default" radius="xl" size="md" className={classes.control}>
               Blog
