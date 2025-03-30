@@ -10,7 +10,7 @@ export function HeroBullets() {
       <div className={classes.inner}>
         <div className={classes.content}>
           {/* TODO: Actually write something useful here */}
-          <Text c="dimmed">Hi cunt,</Text>
+          {/*<Text c="dimmed">Hi cunt,</Text>*/}
           <Text c="dimmed" mt="md">
             I&apos;m a Developer from Australia that is interested in both frontend + backend
             development.
